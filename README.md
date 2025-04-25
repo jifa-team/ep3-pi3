@@ -3,8 +3,18 @@
 Este repositório tem como **objetivo exclusivo** apresentar a documentação de requisitos do sistema da clínica odontológica **JIFA**, desenvolvida na disciplina **Projeto Integrado III - Entregável Parcial 3** (ADS - UFCA).
 
 📌 **Escopo deste repositório:**
+- Links para os Documentos 
 - Histórias de Usuário (HUs)
 - Casos de Teste
+
+---
+
+## 📂 Link para os Documentos
+
+Os documentos estão disponiveis abaixo:
+
+- 🔍 [Histórias de Usuário](https://docs.google.com/document/d/1PnSahnLdsCs_XWb8RHgXZqmi_OsbJprxYliHG5MSUpk/edit?tab=t.0) 
+- 🧪 [Casos de Teste Funcionais](https://docs.google.com/document/d/1ti6J2sg3GcUS7y6qAPqqjEJ5g_9NLF9kzx-fwx4K9_0/edit?tab=t.0)
 
 ---
 
