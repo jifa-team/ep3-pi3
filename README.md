@@ -39,7 +39,24 @@ Cada história está acompanhada de **critérios de aceitação** que auxiliam n
 
 ## ✅ Casos de Teste
 
-👉 Também serão incluídos os **Casos de Teste**, que derivam diretamente das histórias e critérios de aceitação, permitindo a validação do sistema conforme os requisitos definidos.
+👉  Os **Casos de Teste**, que derivam diretamente das histórias e critérios de aceitação, permitindo a validação do sistema conforme os requisitos definidos.
+
+| ID  | HISTÓRIA DE USUÁRIO ASSOCIADA | CENÁRIO DE TESTE | CASO DE TESTE | PRÉ-CONDIÇÕES | DADOS DE ENTRADA | SAÍDA ESPERADA |
+|-----|-------------------------------|------------------|---------------|---------------|------------------|----------------|
+| 1.1 | 1.1 (Login) | Cliente cadastrado faz login com credenciais válidas | Login de Cliente Cadastrado | Usuário possui conta ativa | E-mail: usuario@exemplo.com<br>Senha: Senha123! | Redirecionamento para Painel do Cliente<br>Mensagem: "Bem-vindo, [Nome]!" |
+| 1.2 | 1.1 (Login) | Cliente tenta login com credenciais inválidas | Login com Credenciais Inválidas | Usuário possui conta mas insere dados errados | E-mail: usuario@exemplo.com<br>Senha: SenhaErrada! | Mensagem: "E-mail ou senha inválidos"<br>Permanência na página de login |
+| 2.1 | 2.1 (Informações Institucionais) | Visitante acessa página "Clínica" | Visualizar Informações sobre a Clínica | Acessar site e navegar até "CLÍNICA" | Clicar em "CLÍNICA" no menu | Exibição de: mapa, mensagem institucional, instalações, contatos e botão "AGENDAR AGORA" |
+| 2.2 | 2.2 (Quem Somos) | Visitante acessa página "Quem Somos" | Visualizar Página "Quem Somos" | Acessar site | Clicar em "QUEM SOMOS" no menu | Exibição de: imagem institucional, texto, especialidades e botões interativos (Missão/Visão/Valores) |
+| 2.3 | 2.3 (Agendamento) | Visitante agenda avaliação gratuita | Agendamento de avaliação gratuita | Estar na página inicial | Preencher: Nome, e-mail, telefone | Mensagem: "Sua avaliação foi agendada"<br>E-mail de confirmação enviado |
+| 2.4 | 2.4 (FAQ) | Visitante busca pergunta frequente | Acessar respostas de perguntas frequentes | Estar na página inicial | Clicar em pergunta específica | Exibição da resposta expandida |
+| 3.1 | 3.1 (Área do Cliente) | Cliente logado acessa painel | Acessar o Painel do Cliente | Usuário logado | Navegar até "PAINEL DO CLIENTE" | Exibição de: últimas atividades, atalhos de serviços e conteúdo do blog |
+| 3.2 | 3.2 (Avaliação) | Cliente avalia serviços | Avaliar os serviços oferecidos | Usuário logado na página inicial | Nota: 5 estrelas<br>Comentário: "Ótimo atendimento..." | Mensagem: "Obrigada pelo feedback"<br>Dados armazenados |
+| 4.1 | 4.1 (Planos de Saúde) | Visitante visualiza planos | Visualização de tipos de planos | Estar na tela inicial de planos | Navegação até "Planos de Saúde" | Exibição dos planos: individual, familiar e coletivo |
+| 4.2 | 4.2 (Detalhes de Planos) | Visitante visualiza detalhes do plano individual | Visualização dos detalhes dos planos | Estar na página de tipos de plano | Clicar em "Plano Individual" | Exibição de: coberturas, carências e vantagens |
+| 5.1 | 5.1 (Aquisição) | Cliente adquire plano | Cliente adquire um plano | Visualizar detalhes do plano | Clicar em "Adquira seu plano"<br>Preencher formulário | Mensagem de sucesso e início do processo |
+| 5.2 | 5.2 (Pagamento) | Cliente escolhe forma de pagamento | Cliente escolhe forma de pagamento | Estar na etapa de pagamento | Selecionar "Cartão de Crédito"<br>Preencher dados | Confirmação da compra com cartão |
+| NF1 | Usabilidade | Confirmação pós-compra | Sistema exibe confirmação clara | Operação realizada com sucesso | Tipo de plano, valor, forma de pagamento | Mensagem: "Compra realizada com sucesso!" + comprovante |
+| NF2 | Segurança | Proteção de dados no login | Proteção de Dados no Login | Sistema usa HTTPS/criptografia | E-mail: usuario@exemplo.com<br>Senha: Senha123! | Conexão segura (cadeado)<br>Dados sensíveis não expostos |
 
 ---
 
